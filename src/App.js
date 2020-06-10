@@ -1,6 +1,7 @@
 import React from 'react';
 import './App.css';
 import { Container } from 'semantic-ui-react'
+import Stick1 from "./Stick1"
 
 export default class App extends React.Component {
   state = {
@@ -55,12 +56,13 @@ export default class App extends React.Component {
     return (
       <div style={styles}>
         <div style={{ ...squareStyles, top: squareY, left: squareX,}}></div>
+        <Stick1 />
       </div>
     );
   }
 }
 const length = 600;
-const squareSize = 30;
+const squareSize = 20;
 
 const squareStyles = {
   position: "absolute",
