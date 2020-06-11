@@ -2,6 +2,7 @@ import React from 'react';
 import './App.css';
 import { Container } from 'semantic-ui-react'
 import Stick1 from "./Stick1"
+import Stick2 from "./Stick2"
 
 export default class App extends React.Component {
   state = {
@@ -57,6 +58,7 @@ export default class App extends React.Component {
       <div style={styles}>
         <div style={{ ...squareStyles, top: squareY, left: squareX,}}></div>
         <Stick1 />
+        <Stick2 />
       </div>
     );
   }
